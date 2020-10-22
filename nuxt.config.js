@@ -16,12 +16,15 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '~/assets/scss/vendor.scss'
+    '~/assets/scss/vendor.scss',
+    '~/assets/scss/app.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '~/plugins/axios'
+    '~/plugins/axios',
+    '~/plugins/vue-composition-api',
+    '~/plugins/icon'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -34,12 +37,15 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxtjs/axios', // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios', // https://go.nuxtjs.dev/axios,
+    '@nuxtjs/svg',
     'nuxt-purgecss'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost:8000/api'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

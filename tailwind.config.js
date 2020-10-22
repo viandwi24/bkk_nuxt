@@ -5,8 +5,11 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Quicksand', '-apple-system', 'BlinkMacSystemFont']
+    },
+    extend: {}
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }
